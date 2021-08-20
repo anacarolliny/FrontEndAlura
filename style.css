@@ -1,0 +1,10 @@
+body{
+    background: #CCCCCC;
+}
+p{
+    text-align: center;
+  }
+
+em strong{ /*Todos os strong que estão dentro do em */
+    color: red;
+}
