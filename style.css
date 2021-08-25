@@ -92,7 +92,7 @@ header {
   
   footer{
     text-align: center;
-    background: url("bg.jpg") /* por padrao o css copia e cola ate tomar conta do espaço completo pois a original é um quadrado pequeno */;
+    background: url("./imagens_produtos/bg.jpg") /* por padrao o css copia e cola ate tomar conta do espaço completo pois a original é um quadrado pequeno */;
     padding: 40px 0;
     
   }
@@ -113,16 +113,20 @@ header {
     margin: 40px 0;
   }
   
-  form label{
+  form label, form p{ /* todos os paragrafos do formulário tenham a mesma confg. */
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
   }
   
   
-  form input{
+  .input-padrao{ /* aqui estou dizendo que as mesmas configurações para dentro do form, tanto para o input quanto o textarea */
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+  }
+
+  .checkbox{
+    margin: 20px 0;
   }

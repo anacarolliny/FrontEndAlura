@@ -25,17 +25,48 @@
     </header>
 
     <main>
-      <form>
+      <form> <!-- cada label está para seu input, a caixa de texto é o input com id do seu label, o nome que está especificando-->
+        
+        
         <label for="nomesobrenome"> Nome e Sobrenome</label>
-        <input type="text" id="nomesobrenome">
+        <input type="text" id="nomesobrenome" class="input-padrao" required ><!-- ele torna o campo obrigatório-->
 
         <label for="email"> Email</label>
-        <input type="text" id="email">
+        <input type="email" id="email" class="input-padrao" required placeholder="Seu email@dominio.com"><!-- ele deixa a mensagem até começar a digitar no campo-->
 
         <label for="telefone"> Telefone</label>
-        <input type="text" id="telefone">
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-        <input type="submit" value="Enviar Formulário">
+        <label for="mensagem">Mensagem</label>
+        <textarea name="" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea> <!-- é uma area de conteúdo -->
+
+        <div>
+          <p>Como prefere nosso contato?</p>
+
+          <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label> <!-- o radio necessita fazer uma configuração para apeas um ficar selecionado por vez, se nao libera para selecionar mais de um-->
+          <!-- essa marcação faz com que os 3 radius encherguem que eles são do mesmo grupo e assim só um pode ser selecionado-->
+          
+          <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
+            Telefone</label>
+            
+            <label for="radio-whatsapp"><input type="radio" name="contato"  value="whatsapp" id="radio-whatsapp">
+              WhatsApp</label>
+          
+          
+        </div>
+        
+          <p>Qual horário prefere ser atendido ?</p> <!-- seletor para menu com opções dropdown-->
+          <select name="" id="">
+                <option value="">Manhã</option>
+                <option value="">Tarde</option>
+                <option value="">Noite</option>
+          </select>
+
+          <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+          <input type="submit" value="Enviar Formulário"> <!-- A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado. -->
+        
+
+        
       </form>
     </main>
 
