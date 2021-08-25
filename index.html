@@ -5,22 +5,52 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="style.css">
+         
+        <link rel="stylesheet" href="style-home.css">
          
     </head>
     <body><!--Segunda parte do código-->
+        <header><!-- essa é a tag usada para o cabeçalho da página e a que é para aparecer o conteudo, diferente do HEAD, aqui vai ser a primeira coisa que vai ser lida pelo navegador, o header é o interpretador principal que  vai ser lido por ser o primeiro, entao renomeamos a apartir dai o h1,h2,h3-->
+        <div class="caixa"> <!-- divisao do cabçalho para criar um tamanho fixo envelopado -->
+        <h1><img src="./imagens_produtos/logo.png" alt=""></h1>
+
+        <nav><!-- para navegacao a gente usa a tag nav, atualizacoes do html5 -->
+            <ul>
+            <li> <a href="./index.html">Home</a></li>
+            <li> <a href="./produtos.html">Produtos</a></li>
+            <li> <a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        </div>  
+          <!--<h1 class="titulo-principal">Barbearia Alura</h1> -->
+                  </header>
         <img id="banner" src="./banner.jpg" alt="Imagem da Barbearia">
+        <div class="principal"> <!--Primeira divisão do site --> 
+        <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
 
-        <h1>Sobre a Barbearia Alura</h1>
+          <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p>
+          
+          <p id ="missao"><em>Nossa missão é:<strong> "Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
 
-        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p>
+          <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </div>
+
+        <div class="beneficios"> <!-- Segunda divisao do site -->
+
         
-        <p id ="missao"><em>Nossa missão é:<strong> "Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+          <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+          <h3 class="titulo-centralizado">Benefícios</h3>
 
-        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+          <ul><!-- esse tipo de tag impossibilidade trabalhar com o inline, foi ele executa o codigo e quebra a linha logo depois -->
 
+            <li class="itens">Atendimento ao Cliente</li> <!-- comportamento block : ocupar 100 % a largura da linha -->
+            <li class="itens">Espaço diferenciado</li>
+            <li class="itens">Localização</li>
+            <li class="itens">Profissionais Qualificados</li>
+
+          </ul>
+
+          <img src="./imagens_produtos/índice.jpg" alt="" class="imagemBeneficios"> <!-- a tag img possibilita trabalhar na mesma linha ou seja inline, a diferença é que mesmo que eu diminua a largura do elemento block ele sempre vai completar a linha, o inline nao deixa alterar o espaçamento interno e externo, para isso o elemento tem que ser inline e block ao mesmo tempo -->
+        </div> <!-- blocos de conteúdo no HTML --> 
     </body>
     </html>
-
-
-

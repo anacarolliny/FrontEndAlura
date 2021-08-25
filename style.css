@@ -1,24 +1,128 @@
-body{
-    background: #CCCCCC;
-}
-
-#banner{
-    width: 100%;
-}
-
-h1 { 
-    text-align: center
-
-}
-
-p{
+header {
+    background: #BBBBBB;
+    padding: 20px 0; /* o cabeçalho ficou com espaçamento pra cima e para baixo */
+  }
+  
+  .caixa{
+    position: relative; /* o menu ficou absoluto dentro d caixa, menu colado na caixa */
+    width: 940px;
+    margin: 0 auto; /*aqui a margem ficou automatico a margem da esquerda e direita, centralizada */
+  }
+  
+  nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+  
+  
+  }
+  
+  nav li { /* todos os itens da lista que estao dentro da navegacao */
+  
+    display: inline;
+    margin:  0 0 0 15px;
+  }
+  
+  nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold; /* negrito */
+    font-size: 22px;
+    text-decoration: none; /* nenhuma decoração no texto : tirar  o sublinhado */
+  
+  }
+  
+  nav a:hover{ /* comportamento padrao da nav a / quando o mouse estiver em cima do menu d navegação, os links de lá */
+    color: #C78C19; 
+    text-decoration: underline;   
+  
+  }
+  
+  .produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  
+  .produtos li{
+    display: inline-block;
     text-align: center;
-}
-
-#missao{
-    font-size: 20px
-}
-
-em strong{ /*Todos os strong que estão dentro do em */
-    color: #FF0000;
-}
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding:  30px 20px; /* para nao colar na borda, aumentei o espaçamento interno, mas o tamanho do elemento aumentou largura do 30% + o 20 px / O elemento aumenta o seu tamanho. Quando declaro que existe um espaçamento interno, estou aumentando o conteúdo.*/
+    box-sizing: border-box; /* esse comando faz com que o 20 px esteja dentro do 30 % O elemento aumenta a sua largura, já que o tamanho dele ficou maior. A não ser que a propriedade box-sizing tenha o valor border-box.*/
+    /*border-color:#000000 ;
+    border-width: 2px ;
+    border-style: solid;*/
+    border: 2px solid #000000;
+    border-radius: 20px;
+    
+  }
+  
+  .produtos li:hover{
+    border-color:#C78C19;
+    
+  }
+  
+  
+  .produtos li:active{ /*quando eu clicar ou seja, ativo */
+    border-color: #088C09;
+  }
+  
+  
+  .produtos li:hover h2{ /* quando o mouse estiver em cima dos produtos o h2 ter a fonte de 40px */
+    font-size: 40px;
+  }
+  
+  .produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .produto-descricao{
+    font-size: 18px;
+  }
+  
+  .produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+  
+  footer{
+    text-align: center;
+    background: url("bg.jpg") /* por padrao o css copia e cola ate tomar conta do espaço completo pois a original é um quadrado pequeno */;
+    padding: 40px 0;
+    
+  }
+  
+  .copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px 0 0;
+  
+  }
+  
+  main{
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  form{
+    margin: 40px 0;
+  }
+  
+  form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  
+  form input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+  }

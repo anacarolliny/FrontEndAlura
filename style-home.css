@@ -1,0 +1,97 @@
+/*o css deve ter a estrutura assim como a do html, de cima pra baixo */
+
+body{
+    
+}
+
+#banner{
+    width: 100%;
+}
+
+header {
+  background: #BBBBBB;
+  padding: 20px 0; /* o cabeçalho ficou com espaçamento pra cima e para baixo */
+}
+
+.caixa{
+  position: relative; /* o menu ficou absoluto dentro d caixa, menu colado na caixa */
+  width: 940px;
+  margin: 0 auto; /*aqui a margem ficou automatico a margem da esquerda e direita, centralizada */
+}
+
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0;
+
+
+}
+
+nav li { /* todos os itens da lista que estao dentro da navegacao */
+
+  display: inline;
+  margin:  0 0 0 15px;
+}
+
+nav a{
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold; /* negrito */
+  font-size: 22px;
+  text-decoration: none; /* nenhuma decoração no texto : tirar  o sublinhado */
+
+}
+
+nav a:hover{ /* comportamento padrao da nav a / quando o mouse estiver em cima do menu d navegação, os links de lá */
+  color: #C78C19; 
+  text-decoration: underline;   
+
+}
+
+.principal{
+  background: #CCCCCC;
+  padding-left: 30px;
+}
+
+.titulo-principal{
+  padding: 20px;
+}
+
+.titulo-centralizado { 
+    text-align: center
+
+}
+
+p{
+    text-align: center;
+}
+
+#missao{
+    font-size: 20px
+}
+
+em strong{ /*Todos os strong que estão dentro do em */
+    color: #FF0000;
+}
+
+.itens{
+  font-style: italic;
+}
+
+.beneficios{ /*nesse caso as divisoes do site foram criadas para facilitar a criacao da classe div beneficios para ficar com fundo branco e assim criar um destaque diferente */
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+
+
+ul{ /* a caracteristica para quebrar esse paradigma seria o display podendo ser inline, inblock..display está dando referencia em como o elemento vai se comportar na linah de codigo e na página*/
+  display: inline-block;/*ocupou o espaço do conteudo mas permitiu mexer nos espaçamentos e largura */
+  vertical-align: top; /*aqui nossos elementos estao alinhados pela linha de cima, e nao o padrao que seria debaixo */
+  width: 20%;
+  margin-right: 15%;
+}
+
+.imagemBeneficios{ /*Para a imagem ficar junto da lista devemos trabalhar com o block da linha, no caso o li criou isso e nao deixou trabalhar na mesma linha ele */
+  width: 50%;
+}
