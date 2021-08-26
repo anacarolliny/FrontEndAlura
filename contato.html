@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato-Barbearia Alura</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body>
-    <header>
 
-      <div class="caixa"> <!-- divisao do cabçalho para criar um tamanho fixo envelopado -->
-        <h1><img src="./imagens_produtos/logo.png" alt=""></h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato-Barbearia Alura</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 
-        <nav><!-- para navegacao a gente usa a tag nav, atualizacoes do html5 -->
-            <ul>
-            <li> <a href="./index.html">Home</a></li>
-            <li> <a href="./produtos.html">Produtos</li>
-            <li> <a href="./contato.html">Contato</li>
-          </ul>
-        </nav>
-      </div>  
-    </header>
+</head>
 
-    <main>
-      <form> <!-- cada label está para seu input, a caixa de texto é o input com id do seu label, o nome que está especificando-->
-        
-        
-        <label for="nomesobrenome"> Nome e Sobrenome</label>
-        <input type="text" id="nomesobrenome" class="input-padrao" required ><!-- ele torna o campo obrigatório-->
+<body>
+  <header>
 
-        <label for="email"> Email</label>
-        <input type="email" id="email" class="input-padrao" required placeholder="Seu email@dominio.com"><!-- ele deixa a mensagem até começar a digitar no campo-->
+    <div class="caixa">
+      <!-- divisao do cabçalho para criar um tamanho fixo envelopado -->
+      <h1><img src="./imagens_produtos/logo.png" alt=""></h1>
 
-        <label for="telefone"> Telefone</label>
-        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+      <nav>
+        <!-- para navegacao a gente usa a tag nav, atualizacoes do html5 -->
+        <ul>
+          <li> <a href="./index.html">Home</a></li>
+          <li> <a href="./produtos.html">Produtos</li>
+          <li> <a href="./contato.html">Contato</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <label for="mensagem">Mensagem</label>
-        <textarea name="" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea> <!-- é uma area de conteúdo -->
+  <main>
+    <form>
+      <!-- cada label está para seu input, a caixa de texto é o input com id do seu label, o nome que está especificando-->
 
-        <div>
-          <p>Como prefere nosso contato?</p>
 
-          <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label> <!-- o radio necessita fazer uma configuração para apeas um ficar selecionado por vez, se nao libera para selecionar mais de um-->
-          <!-- essa marcação faz com que os 3 radius encherguem que eles são do mesmo grupo e assim só um pode ser selecionado-->
-          
-          <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
-            Telefone</label>
-            
-            <label for="radio-whatsapp"><input type="radio" name="contato"  value="whatsapp" id="radio-whatsapp">
-              WhatsApp</label>
-          
-          
-        </div>
-        
-          <p>Qual horário prefere ser atendido ?</p> <!-- seletor para menu com opções dropdown-->
-          <select name="" id="">
-                <option value="">Manhã</option>
-                <option value="">Tarde</option>
-                <option value="">Noite</option>
-          </select>
+      <label for="nomesobrenome"> Nome e Sobrenome</label>
+      <input type="text" id="nomesobrenome" class="input-padrao" required><!-- ele torna o campo obrigatório-->
 
-          <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
-          <input type="submit" value="Enviar Formulário"> <!-- A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado. -->
-        
+      <label for="email"> Email</label>
+      <input type="email" id="email" class="input-padrao" required placeholder="Seu email@dominio.com">
+      <!-- ele deixa a mensagem até começar a digitar no campo-->
 
-        
-      </form>
-    </main>
+      <label for="telefone"> Telefone</label>
+      <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-    <footer> <!-- tag do rodapé -->
-      <img src="./imagens_produtos/logo-branco.png" alt="">
-      <p class="copyright">&copy; Copyright Barbearia Alura - 2021</p>
-    </footer>
+      <label for="mensagem">Mensagem</label>
+      <textarea name="" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+      <!-- é uma area de conteúdo -->
 
-  </body> 
+      <div>
+        <p>Como prefere nosso contato?</p>
+
+        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+        <!-- o radio necessita fazer uma configuração para apeas um ficar selecionado por vez, se nao libera para selecionar mais de um-->
+        <!-- essa marcação faz com que os 3 radius encherguem que eles são do mesmo grupo e assim só um pode ser selecionado-->
+
+        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
+          Telefone</label>
+
+        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+          WhatsApp</label>
+
+
+      </div>
+
+      <p>Qual horário prefere ser atendido ?</p> <!-- seletor para menu com opções dropdown-->
+      <select name="" id="">
+        <option value="">Manhã</option>
+        <option value="">Tarde</option>
+        <option value="">Noite</option>
+      </select>
+
+      <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+      <input type="submit" value="Enviar Formulário">
+      <!-- A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado. -->
+
+
+
+    </form>
+  </main>
+
+  <footer>
+    <!-- tag do rodapé -->
+    <img src="./imagens_produtos/logo-branco.png" alt="">
+    <p class="copyright">&copy; Copyright Barbearia Alura - 2021</p>
+  </footer>
+
+</body>
+
 </html>

@@ -1,3 +1,7 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background: #BBBBBB;
     padding: 20px 0; /* o cabeçalho ficou com espaçamento pra cima e para baixo */
@@ -129,4 +133,39 @@ header {
 
   .checkbox{
     margin: 20px 0;
+  }
+
+  .banner{ /*css da pagina inicial */
+    width: 100%;
+
+  }
+
+  /*.titulo-centralizado{  esse nome nao é especifico e nem genérico, nao é o melhortipo de nome */
+  .titulo-principal{
+    text-align: center;
+    font-size: 2em;/*dobro da fonte padrao, independente do tamanho da fonte padrão se usa em é proporcional ao pixel */
+    margin: 0 0 1em; /* aqui a margin é proporcional ao tamanho da fonte o 1em */
+    clear: left;
+  }
+
+  .principal p{
+    margin: 0 0 1em;
+  }
+
+  .principal strong{
+    font-weight: bold;
+  }
+
+  .principal em{
+    font-style: italic;
+  }
+
+  .imagemBeneficios{
+    width: 60%;
+  }
+
+  .utensilios{ /*nesse caso nao funciona o display: inline block porque ele seria o elemento padrão e o que queremos é o texto acompanhar relativamente os paragrafos ir acompanhando */
+    width: 150px;
+    float: left;/* e que deixe uma margem ao derredor da imagem */
+    margin: 0 20px 20px 0;
   }
