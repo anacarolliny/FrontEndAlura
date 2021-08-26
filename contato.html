@@ -40,8 +40,8 @@
         <label for="mensagem">Mensagem</label>
         <textarea name="" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea> <!-- é uma area de conteúdo -->
 
-        <div>
-          <p>Como prefere nosso contato?</p>
+        <fieldset> /* é usada para criar uma divisão no nosso formulário, com um ou mais input*/
+          <legend>Como prefere nosso contato?</legend> /*  que usamos para um título de um grupo de campos em qualquer formulário. */
 
           <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label> <!-- o radio necessita fazer uma configuração para apeas um ficar selecionado por vez, se nao libera para selecionar mais de um-->
           <!-- essa marcação faz com que os 3 radius encherguem que eles são do mesmo grupo e assim só um pode ser selecionado-->
@@ -49,25 +49,51 @@
           <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
             Telefone</label>
             
-            <label for="radio-whatsapp"><input type="radio" name="contato"  value="whatsapp" id="radio-whatsapp">
+            <label for="radio-whatsapp"><input type="radio" name="contato"  value="whatsapp" id="radio-whatsapp" checked>
               WhatsApp</label>
           
           
-        </div>
+        </fieldset>
         
-          <p>Qual horário prefere ser atendido ?</p> <!-- seletor para menu com opções dropdown-->
+        <fieldset> 
+          <legend>Qual horário prefere ser atendido ?</legend> <!-- seletor para menu com opções dropdown-->
           <select name="" id="">
                 <option value="">Manhã</option>
                 <option value="">Tarde</option>
                 <option value="">Noite</option>
           </select>
-
-          <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
-          <input type="submit" value="Enviar Formulário"> <!-- A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado. -->
-        
-
-        
+        </fieldset>  
+          <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+          <input type="submit" value="Enviar Formulário" class="enviar"> <!-- A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado. -->
+                
       </form>
+
+      <table>
+        <thead> <!-- cabeçalho da tabela--> 
+        <tr> <!-- criacao de colunas-->
+          <td>Dia</td> <!-- criacao de linhas -->
+          <td>Horário</td>
+        </tr>
+        </thead>
+
+        <tbody>  <!-- corpo da tabela--> 
+        <tr>
+          <td>Segunda</td>
+          <td>8Hrs ~20Hrs</td>
+        </tr>
+        <tr>
+          <td>Quarta</td>
+          <td>8Hrs ~20Hrs</td>
+        </tr>
+      </tbody>
+        <tr>
+          <td>Sexta</td>
+          <td>8Hrs ~20Hrs</td>
+        </tr>
+
+      </table>
+
+
     </main>
 
     <footer> <!-- tag do rodapé -->

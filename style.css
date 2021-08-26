@@ -113,7 +113,7 @@ header {
     margin: 40px 0;
   }
   
-  form label, form p{ /* todos os paragrafos do formulário tenham a mesma confg. */
+  form label, form legend{ /* todos os paragrafos do formulário tenham a mesma confg. */
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -129,4 +129,39 @@ header {
 
   .checkbox{
     margin: 20px 0;
+  }
+
+  .enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /* quando mouse passa em cima do botao ela demora 1s para mudar, antes estava só o backgroud depois ficou tudo com all */
+    cursor: pointer;
+  }
+
+  .enviar:hover{
+    background: rgb(255, 81, 0);
+         transform: scale(1.2); /* quero aumentar o botão com todos os itens juntos quando mouse passar em cima */
+     /*  transform: rotate(70deg) scale(1.2); aqui uam demostração de efeitos css inline pois se estivessem separados um sobrescrevia o anterior */
+  }
+
+  table{
+    margin: 20px 40px;
+    
+  }
+
+  thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+  }
+
+  td, th{ /* aqui está o cabeçalho e as linhas também */
+    border: 1px solid #000000;
+    padding: 8px 15px ;
   }
